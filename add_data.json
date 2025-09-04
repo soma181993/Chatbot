@@ -1,0 +1,48 @@
+{
+    "users": [
+        {
+            "user_id": "05cd384b-204a-4658-aca4-cbc80e4efbe0",
+            "created_on": "2025-09-01 13:46:14.704123"
+        },
+        {
+            "user_id": "073dfc5c-784a-4873-ad8e-a6177674d86f",
+            "created_on": "2025-09-01 13:46:54.314471"
+        },
+        {
+            "user_id": "3a9398ab-9aec-4b43-85ef-a777557752f8",
+            "created_on": "2025-09-01 13:47:53.013971"
+        }
+    ],
+    "intents": [],
+    "conversations": [
+        {
+            "user_id": "05cd384b-204a-4658-aca4-cbc80e4efbe0",
+            "query": "hi",
+            "response": [
+                "Hello! This is HR Assistant. How can I help you today?",
+                "Hi there! Do you have a question about policies, leave, or payroll?",
+                "Hello, welcome to HR support. How may I assist you?"
+            ],
+            "timestamp": "2025-09-01 13:46:14.714449"
+        },
+        {
+            "user_id": "073dfc5c-784a-4873-ad8e-a6177674d86f",
+            "query": "hi",
+            "response": [
+                "Hello! This is HR Assistant. How can I help you today?",
+                "Hi there! Do you have a question about policies, leave, or payroll?",
+                "Hello, welcome to HR support. How may I assist you?"
+            ],
+            "timestamp": "2025-09-01 13:46:54.314471"
+        },
+        {
+            "user_id": "3a9398ab-9aec-4b43-85ef-a777557752f8",
+            "query": "Are there job openings?",
+            "response": [
+                "Yes, we currently have job openings. Please check the careers portal or share the role you\u2019re interested in.",
+                "We are hiring! Would you like me to share the latest job openings with you?"
+            ],
+            "timestamp": "2025-09-01 13:47:53.014975"
+        }
+    ]
+}

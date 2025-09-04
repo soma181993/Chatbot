@@ -1,0 +1,9 @@
+transformers
+flask
+pandas
+stramlit
+numpy
+PyPDF2
+sentencepiece
+pip install -U sentence-transformers
+

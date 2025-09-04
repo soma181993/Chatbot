@@ -1,0 +1,629 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Good evening"],
+      "responses": ["Hello! This is HR Assistant. How can I help you today?", "Hi there! Do you have a question about policies, leave, or payroll?", "Hello, welcome to HR support. How may I assist you?"]
+    },
+    {
+      "tag": "leave_request",
+      "patterns": ["I want to apply for leave", "How do I apply for leave?", "Request leave", "Can I take leave?", "Apply leave"],
+      "responses": ["Sure, please provide your leave dates and reason, and I’ll guide you through the process.", "You can apply for leave through the HR portal or send me your leave details so I can log it."]
+    },
+    {
+      "tag": "salary_query",
+      "patterns": ["When will I get my salary?", "Salary date?", "Salary delay", "My payment is late", "Salary issue"],
+      "responses": ["Salaries are usually credited on the last working day of the month. Do you want me to check the payroll status for you?", "Your salary should be processed by HR payroll. Would you like me to raise a query on your behalf?"]
+    },
+    {
+      "tag": "policy_info",
+      "patterns": ["What is the leave policy?", "Explain work from home policy", "Tell me about HR policies", "Leave rules", "Work policy"],
+      "responses": ["Our leave policy includes annual leave, sick leave, and casual leave. Would you like the full document link?", "Sure, I can share details of the HR policy document with you."]
+    },
+    {
+      "tag": "job_openings",
+      "patterns": ["Are there job openings?", "Any current vacancies?", "Hiring now?", "Is the company recruiting?"],
+      "responses": ["Yes, we currently have job openings. Please check the careers portal or share the role you’re interested in.", "We are hiring! Would you like me to share the latest job openings with you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you", "Talk later", "Catch you later"],
+      "responses": ["Goodbye! Have a great day.", "Take care! Reach out anytime you need HR help.", "Bye for now! Wishing you a productive day ahead."]
+    },
+    {
+      "tag": "attendance",
+      "patterns": ["Check my attendance", "Attendance record", "How many days did I work?", "Show me my attendance"],
+      "responses": ["Your attendance is available in the HR portal. Do you want me to fetch this month’s record?", "I can help you access your attendance summary in the system."]
+    },
+    {
+      "tag": "holiday_list",
+      "patterns": ["What are the holidays this year?", "Holiday list", "Upcoming holidays", "Next holiday"],
+      "responses": ["The official holiday calendar is available on the HR portal. Would you like me to share the PDF?", "Upcoming holiday is listed in the company calendar. Want me to check the nearest one for you?"]
+    },
+    {
+      "tag": "resignation",
+      "patterns": ["How to resign?", "Submit resignation", "Resignation process", "I want to quit"],
+      "responses": ["You can submit your resignation through the HR portal under Employee Exit. Would you like me to share the step-by-step guide?", "Please inform your manager and submit your resignation letter in the system."]
+    },
+    {
+      "tag": "experience_letter",
+      "patterns": ["How do I get experience letter?", "Request experience certificate", "Experience letter process"],
+      "responses": ["After your exit process is completed, HR will issue your experience letter within 15 working days.", "You can request your experience certificate from HR via the portal."]
+    },
+    {
+      "tag": "internship",
+      "patterns": ["Do you offer internships?", "Internship opportunities", "How to apply for internship?"],
+      "responses": ["Yes, we offer internships. Please check our careers portal for available positions.", "You can apply for internships by submitting your resume through the company website."]
+    },
+    {
+      "tag": "training",
+      "patterns": ["Are there training programs?", "Learning opportunities", "Upskilling sessions"],
+      "responses": ["Yes, we have various training programs. Would you like me to share the training calendar?", "You can register for training programs via the Learning Management System (LMS)."]
+    },
+    {
+      "tag": "promotion",
+      "patterns": ["When is the promotion cycle?", "Promotion policy", "Am I eligible for promotion?"],
+      "responses": ["Promotions are considered during the annual review cycle. Do you want me to check your eligibility criteria?", "Please discuss promotion opportunities with your reporting manager."]
+    },
+    {
+      "tag": "probation",
+      "patterns": ["What is probation period?", "How long is probation?", "Probation policy"],
+      "responses": ["The probation period is typically 6 months. It may vary depending on your role.", "Your appointment letter mentions the probation duration. Would you like me to fetch it?"]
+    },
+    {
+      "tag": "overtime",
+      "patterns": ["Do we get paid for overtime?", "Overtime policy", "Can I claim overtime?"],
+      "responses": ["Yes, overtime is compensated as per company policy. Please log your extra hours in the timesheet.", "Overtime approval is required from your manager before claiming."]
+    },
+    {
+      "tag": "insurance",
+      "patterns": ["What is the insurance policy?", "Health insurance details", "Medical benefits", "Insurance coverage"],
+      "responses": ["Employees are covered under company health insurance. Do you want me to share the coverage details?", "Medical benefits include hospitalization and OPD cover. You can find details in HR portal."]
+    },
+    {
+      "tag": "grievance",
+      "patterns": ["I want to raise a complaint", "Report harassment", "Grievance redressal", "File a complaint"],
+      "responses": ["You can raise a confidential grievance ticket in the HR system. Would you like me to guide you?", "We take complaints seriously. Please share details or contact HR directly for urgent matters."]
+    },
+    {
+      "tag": "probation_extension",
+      "patterns": ["My probation extended", "Probation extended query", "Why probation extended?"],
+      "responses": ["Probation extension happens if performance review is pending. Please connect with your manager for details.", "HR will notify you officially if your probation period is extended."]
+    },
+    {
+      "tag": "reimbursement",
+      "patterns": ["How to claim expenses?", "Reimbursement process", "Travel reimbursement", "Bill claim"],
+      "responses": ["Submit your bills through the expense management system for reimbursement.", "Reimbursements are processed within 10 working days of submission."]
+    },
+    {
+      "tag": "transfer",
+      "patterns": ["Can I request transfer?", "Location transfer", "Transfer policy"],
+      "responses": ["Yes, you can request transfers subject to business availability. Would you like me to share the policy document?", "Transfer requests should be raised in HRMS and approved by your manager."]
+    },
+    {
+      "tag": "bonus",
+      "patterns": ["When will I get bonus?", "Bonus policy", "Annual bonus details"],
+      "responses": ["Bonuses are credited during the annual appraisal cycle based on company performance.", "Bonus eligibility depends on your grade and performance review."]
+    },
+    {
+      "tag": "shift_timings",
+      "patterns": ["What are office timings?", "Shift hours", "Working hours"],
+      "responses": ["Regular office hours are 9 AM to 6 PM. For shift roles, please check your roster.", "Your shift schedule is available in the HR portal."]
+    },
+    {
+      "tag": "performance_review",
+      "patterns": ["When is performance review?", "Appraisal cycle", "Performance evaluation"],
+      "responses": ["Performance reviews happen annually. Mid-year feedback is also provided.", "Your appraisal cycle details are in the HR portal. Would you like me to fetch them?"]
+    },
+    {
+      "tag": "id_card",
+      "patterns": ["How to get new ID card?", "Lost my ID card", "ID card reissue"],
+      "responses": ["Please raise a ticket in HRMS to request a new ID card.", "Lost ID cards can be reissued after approval from your manager."]
+    },
+    {
+      "tag": "reference_letter",
+      "patterns": ["Need reference letter", "Request for recommendation", "Reference certificate"],
+      "responses": ["HR can issue reference letters for employment purposes. Please raise a request in the portal.", "Provide details of the recipient company so we can issue your reference letter."]
+    },
+    {
+      "tag": "work_from_home",
+      "patterns": ["Can I work from home?", "WFH policy", "Remote work option", "Work from home request"],
+      "responses": ["Work from home is allowed based on role and manager approval.", "Please check the WFH policy document or request approval in the HR portal."]
+    },
+    {
+      "tag": "casual_leave",
+      "patterns": ["How many casual leaves?", "Casual leave limit", "CL policy"],
+      "responses": ["You are entitled to 12 casual leaves per year. Please check your balance in HRMS.", "Casual leave details are available in the leave policy document."]
+    },
+    {
+      "tag": "sick_leave",
+      "patterns": ["How to apply sick leave?", "Medical leave", "Illness leave policy"],
+      "responses": ["For sick leave, please upload a medical certificate if absent more than 2 days.", "Sick leaves are credited annually as per HR policy."]
+    },
+    {
+      "tag": "maternity_leave",
+      "patterns": ["Maternity leave policy", "Pregnancy leave", "How long is maternity leave?"],
+      "responses": ["Maternity leave is 26 weeks as per company policy.", "You can apply for maternity leave with supporting documents in HRMS."]
+    },
+    {
+      "tag": "paternity_leave",
+      "patterns": ["Paternity leave policy", "Leave for new fathers", "How many days paternity leave?"],
+      "responses": ["Paternity leave of 10 days is provided.", "Please apply for paternity leave in advance via HR portal."]
+    },
+    {
+      "tag": "casual_dress",
+      "patterns": ["Is there a dress code?", "Can I wear casuals?", "Dress policy"],
+      "responses": ["Business casuals are allowed on weekdays, Fridays are casual dress days.", "Formal wear is expected during client meetings."]
+    },
+    {
+      "tag": "probation_confirmation",
+      "patterns": ["When will I get confirmed?", "Probation end", "Confirmation process"],
+      "responses": ["Confirmation happens after successful probation review.", "Your manager will share confirmation feedback with HR."]
+    },
+    {
+      "tag": "id_proof_request",
+      "patterns": ["Can HR provide ID proof?", "Address proof request", "Employment ID proof"],
+      "responses": ["HR can issue employment verification letters for ID proof.", "Please raise a request in HRMS to get proof documents."]
+    },
+    {
+      "tag": "leave_encashment",
+      "patterns": ["Leave encashment policy", "Can I encash leaves?", "Unused leaves payment"],
+      "responses": ["Unused paid leaves can be encashed during full and final settlement.", "Encashment eligibility depends on leave balance."]
+    },
+    {
+      "tag": "final_settlement",
+      "patterns": ["When will I get final settlement?", "F&F process", "Exit settlement timeline"],
+      "responses": ["Final settlement is processed within 45 days of your last working day.", "HR will share settlement details on email."]
+    },
+    {
+      "tag": "employee_verification",
+      "patterns": ["Background verification", "Employee verification letter", "BGC process"],
+      "responses": ["Background checks are done by third-party agencies during hiring.", "Verification letters can be requested via HR."]
+    },
+    {
+      "tag": "loan_policy",
+      "patterns": ["Can I take a loan?", "Loan facility from company", "Salary advance"],
+      "responses": ["Salary advance or loan facility is available. Please check finance policy.", "You can apply for salary advance through HR portal."]
+    },
+    {
+      "tag": "travel_policy",
+      "patterns": ["Travel policy", "Official trip rules", "Travel allowance"],
+      "responses": ["Travel expenses are reimbursed as per company travel policy.", "Please check the travel policy in HR portal before booking."]
+    },
+    {
+      "tag": "cafeteria",
+      "patterns": ["Cafeteria menu", "Food services", "Lunch timings"],
+      "responses": ["Cafeteria services are available between 8 AM and 8 PM.", "You can check daily menu in the employee app."]
+    },
+    {
+      "tag": "parking",
+      "patterns": ["Parking facility", "Car parking", "Bike parking"],
+      "responses": ["Parking is available for employees with registered vehicles.", "Please apply for parking pass through facilities department."]
+    },
+    {
+      "tag": "employee_code",
+      "patterns": ["What is my employee code?", "Employee ID", "Find my emp ID"],
+      "responses": ["Your employee code is available in your HRMS profile.", "Do you want me to fetch your employee code?"]
+    },
+    {
+      "tag": "joining_formalities",
+      "patterns": ["What are joining formalities?", "Onboarding process", "First day requirements"],
+      "responses": ["Joining formalities include document submission and induction session.", "You will receive a checklist before your joining date."]
+    },
+    {
+      "tag": "offer_letter",
+      "patterns": ["How do I get my offer letter?", "Offer letter download", "Offer letter not received"],
+      "responses": ["Your offer letter is available in the HR portal under My Documents.", "If not received, please contact recruitment HR."]
+    },
+    {
+      "tag": "appraisal_letter",
+      "patterns": ["Where can I see my appraisal letter?", "Hike letter", "Salary revision document"],
+      "responses": ["Appraisal letters are uploaded in HR portal after performance review.", "You will be notified by email once it is released."]
+    },
+    {
+      "tag": "joining_bonus",
+      "patterns": ["Do I get joining bonus?", "Bonus at joining", "Sign-on bonus policy"],
+      "responses": ["Joining bonus is role-specific and mentioned in your offer letter.", "If eligible, it will be credited with your first salary."]
+    },
+    {
+      "tag": "relocation_allowance",
+      "patterns": ["Do I get relocation allowance?", "Relocation expenses", "Transfer support"],
+      "responses": ["Relocation allowance is provided for intercity transfers.", "You can claim relocation expenses with valid bills."]
+    },
+    {
+      "tag": "team_outing",
+      "patterns": ["Team outing policy", "Recreational activities", "Fun events"],
+      "responses": ["Team outings are approved by managers and funded by HR within budget.", "Recreational activities are scheduled quarterly."]
+    },
+    {
+      "tag": "festival_bonus",
+      "patterns": ["Do we get festival bonus?", "Diwali bonus", "Holiday bonus"],
+      "responses": ["Festival bonuses are given depending on company performance.", "Check payroll announcements for festival bonus details."]
+    },
+    {
+      "tag": "early_exit",
+      "patterns": ["Can I leave before notice period?", "Early exit policy", "Buyout notice period"],
+      "responses": ["Early exit is possible by serving buyout or getting manager approval.", "Please check your appointment letter for notice terms."]
+    },
+    {
+      "tag": "employee_wellness",
+      "patterns": ["Wellness program", "Counseling support", "Mental health assistance"],
+      "responses": ["The company provides wellness programs and counseling sessions.", "You can book a confidential session via the HR portal."]
+    },
+    {
+      "tag": "probation_feedback",
+      "patterns": ["How to give probation feedback?", "Probation review form", "Submit probation feedback"],
+      "responses": ["Probation feedback is submitted by managers in the HRMS system.", "You can ask your manager to complete your probation review form."]
+    },
+    {
+      "tag": "dress_code_friday",
+      "patterns": ["Friday dress code", "Casual Friday policy", "Friday wear casuals?"],
+      "responses": ["Fridays are casual dress days unless you have client meetings.", "You may wear casuals every Friday."]
+    },
+    {
+      "tag": "tax_declaration",
+      "patterns": ["How to declare taxes?", "Submit tax documents", "IT declaration process"],
+      "responses": ["You can submit your tax declaration via the payroll portal.", "HR payroll accepts tax proofs during the declaration window."]
+    },
+    {
+      "tag": "form16",
+      "patterns": ["Where is my Form 16?", "Download Form 16", "Form 16 availability"],
+      "responses": ["Form 16 is available in the payroll portal under Tax Documents.", "You will get notified once Form 16 is uploaded."]
+    },
+    {
+      "tag": "pan_update",
+      "patterns": ["How to update PAN?", "PAN card correction", "Change PAN details"],
+      "responses": ["You can update your PAN details in HRMS under personal information.", "Submit your PAN copy to payroll for update."]
+    },
+    {
+      "tag": "aadhaar_update",
+      "patterns": ["Update Aadhaar", "Aadhaar correction", "Change Aadhaar details"],
+      "responses": ["Aadhaar details can be updated in HRMS with supporting documents.", "Please upload the latest Aadhaar card for verification."]
+    },
+    {
+      "tag": "emergency_contact",
+      "patterns": ["Update emergency contact", "Add emergency number", "Emergency details"],
+      "responses": ["You can update emergency contacts in HRMS profile section.", "HR recommends keeping at least two emergency numbers updated."]
+    },
+    {
+      "tag": "pf_balance",
+      "patterns": ["Check PF balance", "Provident fund status", "PF contribution"],
+      "responses": ["Your PF balance is available on the EPFO portal.", "You can check contributions via your UAN number."]
+    },
+    {
+      "tag": "pf_withdrawal",
+      "patterns": ["Withdraw PF", "PF withdrawal process", "How to get PF money?"],
+      "responses": ["PF withdrawal can be done through the EPFO portal using your UAN.", "HR can assist if you need withdrawal guidance."]
+    },
+    {
+      "tag": "esi_details",
+      "patterns": ["ESI policy", "ESI benefits", "What is my ESI number?"],
+      "responses": ["ESI provides medical benefits. You can find details in your payslip.", "HR can share your ESI number upon request."]
+    },
+    {
+      "tag": "gratuity",
+      "patterns": ["Gratuity eligibility", "Do I get gratuity?", "Gratuity payment process"],
+      "responses": ["Gratuity is payable after 5 years of service.", "Final settlement includes gratuity if you meet eligibility."]
+    },
+    {
+      "tag": "idp_program",
+      "patterns": ["Individual development plan", "IDP policy", "How to create IDP?"],
+      "responses": ["You can create your IDP with your manager during performance reviews.", "IDPs are tracked in the Learning Management System."]
+    },
+    {
+      "tag": "laptop_request",
+      "patterns": ["How to request laptop?", "Company laptop policy", "Laptop replacement"],
+      "responses": ["Laptop requests can be raised through IT service desk.", "For replacements, manager approval is required."]
+    },
+    {
+      "tag": "asset_return",
+      "patterns": ["How to return assets?", "Laptop return", "Return ID card"],
+      "responses": ["Company assets must be returned on your last working day.", "HR will guide you on the asset return process."]
+    },
+    {
+      "tag": "buddy_program",
+      "patterns": ["What is buddy program?", "Assign buddy", "Buddy system"],
+      "responses": ["New joiners are assigned buddies to ease onboarding.", "Would you like me to connect you with your buddy?"]
+    },
+    {
+      "tag": "employee_engagement",
+      "patterns": ["What engagement activities?", "Fun events", "Employee activities"],
+      "responses": ["We organize monthly engagement events. Check HR calendar.", "You can register for upcoming employee engagement activities."]
+    },
+    {
+      "tag": "leave_carry_forward",
+      "patterns": ["Can I carry forward leaves?", "Unused leave carry forward", "Leave rollover policy"],
+      "responses": ["Unused paid leaves can be carried forward to next year up to 30 days.", "Check your leave balance in HRMS."]
+    },
+    {
+      "tag": "unpaid_leave",
+      "patterns": ["Unpaid leave policy", "Leave without pay", "LWP details"],
+      "responses": ["Unpaid leaves are marked as LWP when you exceed available balance.", "Salary deductions apply for LWP days."]
+    },
+    {
+      "tag": "shift_allowance",
+      "patterns": ["Do we get shift allowance?", "Night shift allowance", "Shift benefits"],
+      "responses": ["Shift allowances are applicable for night and rotational shifts.", "Allowance details are available in payroll policy."]
+    },
+    {
+      "tag": "security_clearance",
+      "patterns": ["Do we need security clearance?", "Background clearance", "Security approval"],
+      "responses": ["Some roles require security clearance before joining.", "Clearance details are shared by compliance HR."]
+    },
+    {
+      "tag": "probation_termination",
+      "patterns": ["Termination during probation", "Probation end termination", "Can I be terminated in probation?"],
+      "responses": ["Yes, employment may be ended during probation if performance is unsatisfactory.", "HR will notify you in writing for termination cases."]
+    },
+    {
+      "tag": "exit_interview",
+      "patterns": ["Exit interview process", "Do I need exit interview?", "Exit formalities interview"],
+      "responses": ["Exit interviews are scheduled with HR before your last day.", "Your feedback in exit interview helps improve policies."]
+    },
+    {
+      "tag": "salary_structure",
+      "patterns": ["What is my salary structure?", "Salary breakup", "CTC components"],
+      "responses": ["Salary structure is mentioned in your offer letter and HRMS.", "I can share your CTC breakup if needed."]
+    },
+    {
+      "tag": "gift_policy",
+      "patterns": ["Can we accept gifts?", "Gift policy", "Receiving gifts from clients"],
+      "responses": ["Employees must declare gifts above the allowed limit.", "Company policy restricts accepting gifts of high value."]
+    },
+    {
+      "tag": "retirement",
+      "patterns": ["Retirement age", "Superannuation policy", "When do employees retire?"],
+      "responses": ["Retirement age is 60 years as per company policy.", "Superannuation benefits apply at retirement."]
+    },
+    {
+      "tag": "remote_work_abroad",
+      "patterns": ["Can I work from abroad?", "Work from outside country", "WFH overseas policy"],
+      "responses": ["Working abroad requires special approval from HR and compliance.", "Please submit a request in HRMS for overseas remote work."]
+    },
+    {
+      "tag": "intern_certificate",
+      "patterns": ["Internship certificate", "Can I get internship letter?", "Internship proof"],
+      "responses": ["Internship certificates are issued at the end of internship program.", "Please raise a request in HR portal to download certificate."]
+    },
+    {
+      "tag": "joining_delay",
+      "patterns": ["Can I delay joining?", "Postpone joining date", "Extend joining deadline"],
+      "responses": ["Joining delay requests must be approved by HR and business team.", "You can request new joining date via recruiter."]
+    },
+    {
+      "tag": "contract_employee",
+      "patterns": ["Am I a contract employee?", "Contract policy", "Temporary employee terms"],
+      "responses": ["Contract employees are hired on fixed-term basis.", "Your contract terms are mentioned in appointment letter."]
+    },
+    {
+      "tag": "conversion_to_permanent",
+      "patterns": ["Can I become permanent?", "Permanent role conversion", "Contract to full-time"],
+      "responses": ["Conversion depends on performance and business need.", "HR will notify you if eligible for permanent conversion."]
+    },
+    {
+      "tag": "id_card_activation",
+      "patterns": ["My ID card not working", "Activate access card", "Card access issue"],
+      "responses": ["Please contact facilities team for card activation.", "Raise a ticket in HRMS for access card issues."]
+    },
+    {
+      "tag": "canteen_subsidy",
+      "patterns": ["Do we get food subsidy?", "Canteen allowance", "Meal coupons"],
+      "responses": ["Employees are eligible for subsidized meals in cafeteria.", "Meal coupons can be claimed monthly in payroll."]
+    },
+    {
+      "tag": "company_transport",
+      "patterns": ["Is transport provided?", "Shuttle service", "Office cab"],
+      "responses": ["Company provides shuttle and cab services for employees.", "You can register for transport via HR portal."]
+    },
+    {
+      "tag": "security_deposit",
+      "patterns": ["Do we need to pay security deposit?", "Deposit for laptop", "Is there any deposit policy?"],
+      "responses": ["No deposits are collected from employees for assets.", "Only assets must be returned in good condition at exit."]
+    },
+    {
+      "tag": "employee_referral",
+      "patterns": ["Referral policy", "Refer a friend", "Employee referral bonus"],
+      "responses": ["You can refer candidates via referral portal and earn bonus.", "Referral bonus is paid after candidate completes probation."]
+    },
+    {
+      "tag": "probation_extension_letter",
+      "patterns": ["Will I get probation extension letter?", "Probation extension notice", "Formal probation extension"],
+      "responses": ["Yes, HR issues a probation extension letter formally.", "You will receive an email notification for extension."]
+    },
+    {
+      "tag": "disciplinary_action",
+      "patterns": ["What is disciplinary action?", "Can I get warning?", "Misconduct policy"],
+      "responses": ["Disciplinary actions are taken for policy violations.", "They can range from warning letters to termination."]
+    },
+    {
+      "tag": "warning_letter",
+      "patterns": ["I received warning letter", "What is warning letter?", "HR warning notice"],
+      "responses": ["Warning letters are issued for performance or misconduct issues.", "You may discuss with HR for clarification."]
+    },
+    {
+      "tag": "shift_change",
+      "patterns": ["Can I change my shift?", "Shift swap", "Change working hours"],
+      "responses": ["Shift change requests need manager approval.", "Please submit request via HR portal."]
+    },
+    {
+      "tag": "childcare_policy",
+      "patterns": ["Daycare facility", "Childcare benefits", "Creche service"],
+      "responses": ["Some offices have tie-ups with daycare centers.", "HR can share list of partner childcare facilities."]
+    },
+    {
+      "tag": "gym_membership",
+      "patterns": ["Gym facility", "Fitness benefit", "Workout center"],
+      "responses": ["Employees get discounted gym memberships with partners.", "Check HR wellness program for gym tie-ups."]
+    },
+    {
+      "tag": "remote_it_support",
+      "patterns": ["Laptop not working at home", "Remote IT help", "Technical issue WFH"],
+      "responses": ["Please raise a ticket in IT support portal for remote help.", "You can also call IT helpline for urgent laptop issues."]
+    },
+    {
+      "tag": "email_access",
+      "patterns": ["Email not working", "Outlook issue", "Access company email"],
+      "responses": ["Please raise IT ticket for email access issues.", "HR does not manage email accounts, IT can assist."]
+    },
+    {
+      "tag": "notice_period_policy",
+      "patterns": ["What is my notice period?", "Notice period duration", "Resignation notice time"],
+      "responses": ["Notice period depends on your grade and role. Typically 60 days.", "Check your appointment letter for exact terms."]
+    },
+    {
+      "tag": "notice_period_buyout",
+      "patterns": ["Can I buyout notice period?", "Pay in lieu of notice", "Exit early with buyout"],
+      "responses": ["Yes, you can buyout notice period with manager approval.", "Buyout is calculated based on unserved notice days."]
+    },
+    {
+      "tag": "laptop_policy",
+      "patterns": ["Can I use personal laptop?", "Laptop usage policy", "Bring your own device"],
+      "responses": ["Only company-issued laptops are allowed for work.", "Personal devices must follow IT security guidelines."]
+    },
+    {
+      "tag": "data_privacy",
+      "patterns": ["Data privacy policy", "How company protects my data?", "Personal data use"],
+      "responses": ["Your data is stored securely and only used for employment purposes.", "We follow GDPR and company privacy guidelines."]
+    },
+    {
+      "tag": "mandatory_training",
+      "patterns": ["Do I need mandatory training?", "Compliance courses", "Complete mandatory e-learning"],
+      "responses": ["Yes, compliance trainings must be completed annually.", "You will get reminders to finish mandatory trainings."]
+    },
+    {
+      "tag": "employee_of_the_month",
+      "patterns": ["Employee recognition", "Employee of the month award", "Best employee program"],
+      "responses": ["Outstanding employees are recognized monthly.", "HR announces Employee of the Month in newsletters."]
+    },
+    {
+      "tag": "long_service_award",
+      "patterns": ["Long service recognition", "Service award policy", "Years of service award"],
+      "responses": ["Employees completing milestones (5, 10, 15 years) get service awards.", "HR hosts service award ceremony annually."]
+    },
+     {
+      "tag": "resignation_process",
+      "patterns": ["How to resign?", "Resignation steps", "Submit resignation", "Quit job process"],
+      "responses": ["You can submit your resignation through the HR portal. Would you like me to guide you step by step?", "Resignations must be submitted in writing and approved by your manager."]
+    },
+    {
+      "tag": "experience_certificate",
+      "patterns": ["How do I get an experience certificate?", "Provide service letter", "Experience letter request"],
+      "responses": ["You can request your experience certificate after your last working day via the HR portal.", "Please raise a ticket for your experience certificate. HR will issue it within 7–10 working days."]
+    },
+    {
+      "tag": "internship_policy",
+      "patterns": ["Do you offer internships?", "Internship program", "Apply for internship"],
+      "responses": ["Yes, we have internship programs. Please check the careers portal for details.", "Internship openings are posted regularly on the website. Would you like me to share the link?"]
+    },
+    {
+      "tag": "bonus_query",
+      "patterns": ["When will I get my bonus?", "Bonus payout date", "Annual bonus", "Performance bonus"],
+      "responses": ["Bonuses are released during appraisal cycles. Do you want me to check your eligibility?", "Annual bonuses depend on performance reviews and company policy."]
+    },
+    {
+      "tag": "probation_period",
+      "patterns": ["What is the probation period?", "How long is probation?", "Probation rules"],
+      "responses": ["The probation period is typically 6 months. Confirmation depends on performance.", "Probation duration varies by role. Would you like me to share your offer letter terms?"]
+    },
+    {
+      "tag": "notice_period",
+      "patterns": ["What is the notice period?", "Notice duration", "How long do I need to serve notice?"],
+      "responses": ["The standard notice period is 60 days. Please confirm with your contract for exact details.", "Your notice period is mentioned in your appointment letter. Do you want me to check it for you?"]
+    },
+    {
+      "tag": "promotion_policy",
+      "patterns": ["How do promotions work?", "Promotion cycle", "Eligibility for promotion"],
+      "responses": ["Promotions are based on performance and manager recommendations during the appraisal cycle.", "Promotion eligibility depends on your role and performance review."]
+    },
+    {
+      "tag": "overtime_policy",
+      "patterns": ["Do we get paid for overtime?", "Overtime rules", "Extra working hours policy"],
+      "responses": ["Overtime pay depends on your role and contract. Would you like me to check your policy?", "Overtime is compensated either financially or with time-off, based on HR rules."]
+    },
+    {
+      "tag": "holiday_list",
+      "patterns": ["Share holiday list", "Company holidays", "Festival leave days"],
+      "responses": ["You can check the annual holiday list in the HR portal.", "Here’s the link to download the holiday calendar for this year."]
+    },
+    {
+      "tag": "training_schedule",
+      "patterns": ["Upcoming training", "Training calendar", "Skill development sessions"],
+      "responses": ["The training calendar is available on the HR portal. Would you like me to fetch it?", "We have upcoming sessions on leadership and technology. Do you want details?"]
+    },
+    {
+      "tag": "onsite_opportunity",
+      "patterns": ["How can I apply for onsite?", "Onsite travel policy", "Overseas assignment"],
+      "responses": ["Onsite opportunities depend on project requirements. Speak with your manager for nomination.", "Onsite roles require approval from HR and client. Would you like me to share the travel policy?"]
+    },
+    {
+      "tag": "travel_expense",
+      "patterns": ["How to claim travel expenses?", "Reimbursement process", "Travel allowance"],
+      "responses": ["You can submit your travel expenses through the HR expense portal.", "Please upload your receipts in the system. Reimbursements are processed within 10 working days."]
+    },
+    {
+      "tag": "remote_work",
+      "patterns": ["Can I work remotely?", "WFH request", "Remote work policy"],
+      "responses": ["Remote work requests must be approved by your manager.", "We follow a hybrid work model. Would you like me to share the guidelines?"]
+    },
+    {
+      "tag": "dress_code",
+      "patterns": ["What is the dress code?", "Do we have to wear formals?", "Casual dress allowed?"],
+      "responses": ["The dress code is business casual on weekdays, casuals on Fridays.", "Formal wear is required for client meetings and events."]
+    },
+    {
+      "tag": "shift_timing",
+      "patterns": ["What are office timings?", "Shift details", "Work hours"],
+      "responses": ["Standard work hours are 9 AM to 6 PM. Shifts vary by project.", "Flexible work hours are available with manager approval."]
+    },
+    {
+      "tag": "employee_referral",
+      "patterns": ["Referral program", "Can I refer someone?", "Referral bonus"],
+      "responses": ["Yes, we have a referral program. Successful referrals earn bonuses.", "You can refer candidates via the HR portal under the referral section."]
+    },
+    {
+      "tag": "health_insurance",
+      "patterns": ["Do we have health insurance?", "Medical coverage", "Family health policy"],
+      "responses": ["Yes, the company provides health insurance to employees and dependents.", "Medical insurance details are available in your HR portal under benefits."]
+    },
+    {
+      "tag": "grievance_redressal",
+      "patterns": ["I have a complaint", "How to raise a grievance?", "Workplace issue"],
+      "responses": ["You can raise a grievance anonymously via the HR portal.", "Grievance cases are handled confidentially by the HR committee."]
+    },
+    {
+      "tag": "harassment_policy",
+      "patterns": ["Harassment complaint", "Workplace harassment rules", "POSH policy"],
+      "responses": ["We follow a strict anti-harassment policy under POSH law.", "You can report harassment confidentially. Would you like the helpline number?"]
+    },
+    {
+      "tag": "appraisal_query",
+      "patterns": ["When is appraisal?", "Salary hike process", "Appraisal cycle"],
+      "responses": ["Appraisals happen annually during performance review cycles.", "Salary revisions are based on your appraisal results."]
+    },
+    {
+      "tag": "id_card_issue",
+      "patterns": ["Lost my ID card", "New ID card", "ID card replacement"],
+      "responses": ["Please raise a ticket in the HR portal for ID card reissue.", "Visit the admin desk for a temporary pass while your new card is issued."]
+    },
+    {
+      "tag": "cafeteria_menu",
+      "patterns": ["What is today's cafeteria menu?", "Lunch options", "Food in office"],
+      "responses": ["The cafeteria menu is updated daily on the HR portal.", "Today’s menu includes vegetarian and non-vegetarian options."]
+    },
+    {
+      "tag": "transport_facility",
+      "patterns": ["Do we have cab facility?", "Company transport", "Shuttle service"],
+      "responses": ["Yes, cab facilities are available for late-night shifts.", "You can register for shuttle service via the transport section in HR portal."]
+    },
+    {
+      "tag": "system_issue",
+      "patterns": ["My laptop is not working", "System problem", "Request IT support"],
+      "responses": ["For system issues, please raise a ticket with the IT helpdesk.", "You can log your laptop issues in the IT portal. Do you want me to share the link?"]
+    },
+    {
+      "tag": "exit_interview",
+      "patterns": ["What is an exit interview?", "Exit process", "Leaving formality"],
+      "responses": ["Exit interviews are conducted to understand employee feedback before leaving.", "You will be scheduled for an exit interview during your notice period."]
+    }
+  ]
+}
